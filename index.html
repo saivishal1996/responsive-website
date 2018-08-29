@@ -2,33 +2,38 @@
 <html>
 	 <head>
 	 	<meta charset="utf-8">
-	 	<meta name = "viewport" content = "width = device-width,initial-scale = 1.0">
+	 	<meta name = "viewport" content = "width = device-width;initial-scale = 1.0; maximum-scale=1">
 		<title>IceLand Tourism</title>
 		<link rel="stylesheet"  href="./assets/css/style.css">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 		 <link rel="icon" href="./assets/images/favicon.png" type="image/gif" sizes="16x16"> 
+		 <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet"> 
 	</head>
 	<body>
 
 		<!-- HEADER -->
 
 		<header>
-			<h1>
-				<img src = "./assets/images/title.jpg">
-			</h1>	
+			<h1><img src="./assets/images/title.jpg"></img></h1>
+			<input type="checkbox" id = "nav-toggle" class="nav-toggle">
 			<nav>
-				<li><a class = "btn navbar" href="#">Home</a></li>
-				<li><a class = "btn navbar" href="#">Things to do</a></li>
-				<li><a class = "btn navbar" href="#">About</a></li>
-				<li><a class = "btn navbar" href="#">Plan your trip</a></li>
+				<ul>
+					<li><a class = "btn " href="#">Home</a></li>
+					<li><a class = "btn " href="#">Things to do</a></li>
+					<li><a class = "btn " href="#">About</a></li>
+					<li><a class = "btn " href="#">Plan your trip</a></li>
+				</ul>
 			</nav>
+			<label for="nav-toggle" class="nav-toggle-label">
+				<span></span>
+			</label>
 		</header>
 
 		<!-- HERO -->
 
 		<section class="hero">
 			<div class="background-image"></div>
-			<h1>The Land of Fire and Ice</h1>
+			<h1>The Land of Ice and Fire</h1>
 			<a class="btn" href="https://www.inspiredbyiceland.com/about-iceland"><span>About Iceland</span></a>
 		</section>
 
