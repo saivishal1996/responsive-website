@@ -7,7 +7,7 @@ body {
   font-family: 'PT Serif', serif;
 }
 
-header{
+header {
   height :80px;
   background-color: #30302f;
   align-items: center;
@@ -24,7 +24,6 @@ header{
 .nav-toggle {
   display: none;
 }
-
 
 .nav-toggle-label {
   position: absolute;
@@ -46,18 +45,20 @@ header{
   border-radius: 2px;
   position: relative;
 }
+
 .nav-toggle-label span::before,
 .nav-toggle-label span::after {
   content: '';
   position: absolute;
 }
+
 .nav-toggle-label span::before {
   bottom: 7px;
 }
+
 .nav-toggle-label span::after {
   top: 7px;
 }
-
 
 h1 img {
   max-height: 50px;
@@ -66,11 +67,8 @@ h1 img {
 
 }
 
-
-
 nav {
   position: fixed;
- /* flex-basis: 50%;*/
   top: 80px;
   right:0;
   background: var(--background);
@@ -80,26 +78,21 @@ nav {
   transition: transform 400ms ease-in-out; 
 }
 
-
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0; 
 }
 
-
-
-.nav-toggle:checked ~ nav{
+.nav-toggle:checked ~ nav {
   position: fixed;
   display: block;
   transform: scale(1,1);
 }
 
-
-.hero{
+.hero {
   min-height: 500px;
-  margin-bottom: 30px;
-  margin-top: 150px;
+  margin-top: 80px;
   margin-left:20px;
   display: flex;
   align-items: center;
@@ -108,7 +101,7 @@ nav ul {
   text-align: center;
 }
 
-.hero .background-image{
+.hero .background-image {
   position: absolute;
   top: 0;
   left: 0;
@@ -119,7 +112,7 @@ nav ul {
   background-size: 100% 100%;
 }
 
-.hero .background-image::after{
+.hero .background-image::after {
   content: '';
   position: absolute;
   top: 0;
@@ -129,11 +122,11 @@ nav ul {
   opacity: 0.5;
 }
 
-.hero h1{
+.hero h1 {
   font: bold 60px 'Open Sans', sans-serif;
 }
 
-.hero a{
+.hero a {
   background: #595959;
 }
 
@@ -166,26 +159,25 @@ nav ul {
     flex-direction: column;
     align-items: center;
     padding: 10px 10px;
-  } 
+  }
+
 .card img {
     max-width: 100%;
     height: 250px;
   }
 
-.card a{
+.card a {
     background: #595959;
     border: 0;
     color: white;
     padding: 10px;
-    width: 50%;
+    width: auto;
     height: auto;
-    text-align: center;
-    align-items: flex-end;
     text-decoration: none;
     white-space: nowrap;
   }
 
-footer{
+footer {
   display: flex;
   background-color: #4f504f;
   padding: 20px 0;
@@ -209,7 +201,7 @@ footer a:hover {
   color: #275dad;
 }
 
-footer ul{
+footer ul {
   float:right;
   display: flex;
   flex-basis: 30%;
@@ -219,7 +211,7 @@ footer ul{
   list-style-type: none;
 }
 
-footer ul li{
+footer ul li {
   margin: 0 8px;
 }
 
@@ -227,7 +219,7 @@ footer ul li{
 
 
 
-.btn{
+.btn {
   padding: 20px 20px;
   color: #f0f9fe;
   text-decoration: none;
@@ -239,26 +231,31 @@ footer ul li{
   font-size:17px;
   padding:15px 35px;
 }
+
 .btn:hover {
   background-color:#212325;
 }
+
 .btn:active {
   position:relative;
   top:1px;
 }
 
 @media screen and (min-width: 800px) {
+
   .nav-toggle-label {
      display: none;
    }
-  .nav-toggle:checked~ul{
+
+  .nav-toggle:checked~ul {
      display: flex;
    }
-   header{
+
+  header {
     display: flex;
    }
 
-  nav{
+  nav {
     all:unset;
     display: flex;
     justify-content:flex-end;
@@ -267,7 +264,7 @@ footer ul li{
     height: 100px;
   }
 
-  nav ul{
+  nav ul {
     display: flex;
     justify-content: flex-end;
     flex-direction: row;
@@ -297,32 +294,25 @@ footer ul li{
   nav a:hover::before {
     transform: scale(1,1);
   }
-  }
 }
-@media (max-width: 800px){
-
-
-  .hero h1{
-    font-size: 30px;
-  }
-
-  .hero a{
-    padding: 15px 10px;
-
-  }
-
-  
-
-
-
-}
-
-
 
 
 @media only screen and (max-width : 640px) {
 
-  footer{
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .hero a {
+    padding: 15px 10px;
+
+  }
+
+  .card {
+    min-width: 80vw;
+  }
+
+  footer {
     padding: 30px 15px;
     flex-wrap: wrap;
   }
@@ -332,16 +322,6 @@ footer ul li{
     align-items: center;
     flex:1;
 
-  }
-
-  .card{
-    min-width: 80vw;
-  }
-
-   .hero{
-    min-height: 600px;
-  }
-
-  
+  }  
 
 }
