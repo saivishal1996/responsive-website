@@ -1,2 +1,2 @@
 # stackroute
-Exercises/Assignments done as part of the StackRoute Program.
+Exercises done as part of the StackRoute Program.
