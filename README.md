@@ -1,2 +1,2 @@
 # stackroute
-Exercises done as part of the StackRoute Program.
+Simple responsive website using html,css,flexbox
